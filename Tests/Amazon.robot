@@ -14,9 +14,7 @@ Suite Teardown      Cleanup Testing Data
 User can search for products
     [Documentation]  This is some basic info about the test
     [Tags]           Smoke
-    Sleep            2s
     AmazonApp.Search For Products
-
 
 User must sign in to check out
     [Documentation]  This is some basic info about the test
