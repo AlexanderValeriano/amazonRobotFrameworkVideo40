@@ -16,19 +16,19 @@ ${SEARCH_TERM}    Lamborghini Gallardo
 
 *** Test Cases ***
 
-Logged out user can search for products
+Logged out user should be able to search for products
     [Documentation]  This is some basic info about the test
     [Tags]           Current
     AmazonApp.Search For Products
 
-Logged out user must sign in to check out
+Logged out user should be able to view a product
     AmazonApp.Search For Products
     AmazonApp.Select Product from Search Results
-Logged out user must sign in to check out
+Logged out user should be able to add product to cart
     AmazonApp.Search For Products
     AmazonApp.Select Product from Search Results
     AmazonApp.Add product to Cart
-Logged out user must sign in to check out
+Logged out user should be able to sign in to check out
     [Tags]    Smoke
     AmazonApp.Search For Products
     AmazonApp.Select Product from Search Results
