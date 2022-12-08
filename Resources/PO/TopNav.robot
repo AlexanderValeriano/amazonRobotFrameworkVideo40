@@ -1,8 +1,14 @@
 *** Settings ***
 Library         SeleniumLibrary
 *** Variables ***
+
 *** Keywords ***
-Load
-    Go To                                   http://www.amazon.com
-Verify Page Loaded
-    Wait Until Page Contains                Amazon
+Search for Products
+    Enter Search Term
+    Submit Search
+
+Enter Search Term
+    Input Text      id:twotabsearchtextbox  Ferrari 458
+
+Submit Search
+    Click Button    xpath://input[@id='nav-search-submit-button']

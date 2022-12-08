@@ -1,9 +1,9 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library    SeleniumLibrary
 *** Variables ***
 
 *** Keywords ***
 Load
-        Go To                                   http://www.amazon.com
+    Go To                                   http://www.amazon.com
 Verify Page Loaded
-        Wait Until Page Contains                Amazon
+    Wait Until Page Contains                Amazon
