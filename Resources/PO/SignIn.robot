@@ -1,8 +1,9 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+*** Variables ***
+${SIGNIN_MAIN_HEADING}     xpath://h1
 *** Keywords ***
 Verify Page Loaded
 
-    Page Should Contain Element             xpath://h1[contains(text(),'Sign in')]
-    Element Text Should Be                  xpath://h1[contains(text(),'Sign in')]   Sign in
+    Page Should Contain Element             ${SIGNIN_MAIN_HEADING}
+    Element Text Should Be                  ${SIGNIN_MAIN_HEADING}   Sign in
