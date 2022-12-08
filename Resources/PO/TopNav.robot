@@ -8,7 +8,6 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    Input Text      id:twotabsearchtextbox  Ferrari 458
-
+    Input Text      id:twotabsearchtextbox      ${SEARCH_TERM}
 Submit Search
     Click Button    xpath://input[@id='nav-search-submit-button']

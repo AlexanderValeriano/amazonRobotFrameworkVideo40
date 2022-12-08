@@ -7,7 +7,9 @@ Test Setup          Common.Begin Web Test
 Test Teardown       Common.End Web Test
 Suite Teardown      Cleanup Testing Data
 *** Variables ***
-
+${BROWSER}     edge
+${START_URL}     https://www.amazon.com
+${SEARCH_TERM}    Lamborghini Gallardo
 
 *** Test Cases ***
 
@@ -18,7 +20,7 @@ User can search for products
 
 User must sign in to check out
     [Documentation]  This is some basic info about the test
-    [Tags]  Smoke
+    [Tags]  Current
     AmazonApp.Search For Products
     AmazonApp.Select Product from Search Results
     AmazonApp.Add product to Cart
