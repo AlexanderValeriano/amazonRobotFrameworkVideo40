@@ -13,9 +13,12 @@ Suite Teardown      Cleanup Testing Data
 ${BROWSER}        chrome
 ${START_URL}     https://www.amazon.com
 ${SEARCH_TERM}    Lamborghini Gallardo
-
+${LOGIN_EMAIL}      valerianoalexander@gmail.com
+${LOGIN_PASSWORD}       petit_22
 *** Test Cases ***
-
+Should be able to login
+    [Tags]      Current2
+    AmazonApp.Login     ${LOGIN_EMAIL}     ${LOGIN_PASSWORD}
 Logged out user should be able to search for products
     [Documentation]  This is some basic info about the test
     [Tags]           Current

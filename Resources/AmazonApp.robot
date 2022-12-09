@@ -8,6 +8,13 @@ Resource        ./PO/Cart.robot
 Resource        ./PO/SignIn.robot
 Resource        ./PO/LandingPage.robot
 *** Keywords ***
+Login
+    [Arguments]     ${Username}     ${Password}
+    SignIn.Login With Valid Credentials     ${Username}     ${Password}
+Login With Invalid Credentials
+    SignIn.Fill "Email" Field     false@credentials.com
+    SignIn.Fill "Password" Field    badpassword
+    SignIn.Click "Sign In" Button
 Search For Products
     LandingPage.Load
     LandingPage.Verify Page Loaded
