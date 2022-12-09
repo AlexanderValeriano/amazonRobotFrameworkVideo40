@@ -8,7 +8,7 @@ Test Teardown       Common.End Web Test
 Suite Teardown      Cleanup Testing Data
 #robot -d results -v SEARCH_TERM:"Ferrari 458" .\Tests\AmazonRF.robot
 #robot -d results -v SEARCH_TERM:"Ferrari 458" -i smoke .\Tests\AmazonRF.robot
-
+#This is a project merge
 *** Variables ***
 ${BROWSER}        chrome
 ${START_URL}     https://www.amazon.com
